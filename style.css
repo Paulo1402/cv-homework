@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: rgb(24, 26, 27);
+    --secondary-color: rgb(38, 42, 43);
+    --terciaryColor: rgb(18, 18, 18);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+
+    scroll-behavior: smooth;
+
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#navBarContainer{
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    background-color: var(--secondary-color);
+}
+
+#navBarContainer ul{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    gap: 20px;
+    font-size: 20px;
+
+
+    color: white;
+    padding: 30px;
+
+    max-width: 800px;
+}
+
+#navBarContainer ul li{
+    list-style: none;
+}
+
+#navBarContainer a{
+    text-decoration: none;
+    color: white;
+}
+
+#navBarContainer a:hover{
+    color: wheat;
+    border-bottom: 1px solid white;
+}
+
+
+
+main {
+    margin: 0 auto;
+    padding: 100px;
+    text-align: center;
+
+    max-width: 800px;
+
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    padding-top: 90px;
+}
+
+p {
+    line-height: 25px;
+}
+
+section {
+    padding-block: 15rem;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+#portfolio ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+#portfolio ul li {
+    list-style: none;
+}
+
+#portfolio a{
+    color: white;
+}
+
+#portfolio a:hover{
+    color: wheat;
+    border-bottom: 1px solid white;
+}
+
+#porfolio h3 {
+    margin-bottom: 10px;
+}
+
+#contactMeForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contactMeForm input, #contactMeForm textarea {
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 5px;
+    background-color: var(--terciaryColor);
+}
+
+#submitButton {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+#submitButton:hover {
+    background-color: #555;
+}
+
+/* .sectionContainer:nth-child(even) {
+    background-color: #0e374b;
+} */
+
+/* .sectionContainer:nth-child(even) {
+    background-color: #131516;
+} */

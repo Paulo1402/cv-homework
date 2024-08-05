@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu CV</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="navBarContainer">
+        <ul>
+          <li><a href="#aboutMe">Sobre mim</a></li>
+          <li><a href="#formation">Formação</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Meu CV</h1>
+
+      <div class="sectionContainer">
+        <section id="aboutMe">
+          <h2>Sobre mim</h2>
+
+          <p>
+            "Beautiful is better than ugly. Explicit is better than implicit.
+            Simple is better than complex. [...]" - Zen of Python
+          </p>
+
+          <br />
+
+          <p>
+            Apaixonado por tecnologia e principalmente pela linguagem Python,
+            estou sempre em busca por aprender cada vez mais, sempre respeitando
+            as boas práticas e buscando escrever um código limpo, escalável e de
+            fácil manutenção.
+          </p>
+
+          <br />
+
+          <p>
+            Sou um estusiasta na programação e já experimentei diversas
+            tecnologias, mas dentre elas acabei me apegando no desenvolvimento
+            web fullstack com ênfase no backend usando Python e Django com
+            frameworks como Django Rest Framework e Django Ninja para
+            construções de APIs. No frontend trabalho com TypeScript usando
+            principalmente React ou Vue para construção da interface.
+          </p>
+        </section>
+      </div>
+
+      <section id="formation">
+        <h2>Formação</h2>
+
+        <p>
+          Comecei estudando programação em 2021 enquanto trabalhava com Excel.
+          Nessa época eu realizava um trabalho extremamente manual que com o
+          passar dos dias notei que poderia automatizar boa parte dele.
+        </p>
+
+        <br />
+
+        <p>
+          Foi nesse momento que conheci minha primeira linguagem de programação,
+          o VBA (Visual Basic for Applications). Com ele consegui automatizar
+          boa parte do meu trabalho e isso me motivou a continuar estudando
+          programação.
+        </p>
+
+        <br />
+
+        <p>
+          A partir daí decidi me aprofundar mais e comecei a estudar Python,
+          onde descobri o mundo da programação e me apaixonei por ele. Desde
+          então venho estudando e me aprimorando cada vez mais.
+        </p>
+
+        <br />
+
+        <p>
+          Atualmente estou cursando o 3º semestre de Engenharia de Software na
+          <strong>UNITER</strong>.
+        </p>
+      </section>
+
+      <section id="portfolio">
+        <h2>Portfólio</h2>
+
+        <ul>
+          <li>
+            <a
+              href="https://github.com/Paulo1402/YouTube-Downloader"
+              target="_blank"
+              ><h3>YouTube Downloader</h3></a
+            >
+
+            <p>
+              Aplicação desktop para baixar vídeos e músicas do YouTube a partir
+              de uma lista de URLS ou nomes. Suporte para mp3 e mp4.
+            </p>
+
+            <br />
+
+            <p>
+              Todas as ferramentas para baixar conteúdo do YouTube que eu havia
+              me deparado apenas permitia o download de uma mídia por vez, isso
+              é ótimo quando você quer baixar 1 ou 2 vídeos, mas começa a ficar
+              extremamente chato caso tenha uma lista de 15, 30, 50 itens.
+            </p>
+
+            <br />
+
+            <p>
+              Esse aplicativo soluciona esse problema ao permitir adicionar
+              rapidamente todas as mídias e só depois iniciar o download em
+              segundo plano, além de organizar toda a estrutura na pasta de
+              saída.
+            </p>
+          </li>
+
+          <li>
+            <a
+              href="https://github.com/Paulo1402/Relatorio-de-Notas"
+              target="_blank"
+              ><h3>Relatório de Notas</h3></a
+            >
+
+            <p>
+              Aplicação desktop para controle interno da empresa com impressão e
+              exportação de relatório em pdf. Aplicação consta com sistema de
+              backup automático, acesso simultâneo ao mesmo banco de dados
+              (através da rede) e preferências do usuário, como dark e light
+              mode.
+            </p>
+          </li>
+
+          <li>
+            <a href="https://github.com/Paulo1402/SonoMonkey" target="_blank"
+              ><h3>SonoMonkey</h3></a
+            >
+
+            <p>
+              Bot de músicas para Discord criado para uso pessoal. Bot com menu
+              interativo e suporte a pesquisas por texto e por links do YouTube
+              ou Spotify.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contato</h2>
+
+        <form id="contactMeForm" action="">
+          <label for="nameInput">Nome:</label>
+          <input type="text" id="nameInput" name="name" required />
+
+          <label for="emailInput">E-mail:</label>
+          <input type="email" id="emailInput" name="email" required />
+
+          <label for="messageInput">Mensagem:</label>
+          <textarea
+            name="message"
+            id="messageInput"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+
+          <button id="submitButton" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Desenvolvido com ❤️ por Paulo Benatto</p>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
